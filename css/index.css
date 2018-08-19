@@ -1,0 +1,241 @@
+
+    html,
+    body,
+    .content {
+        width: 100%;
+        height: 100%;
+    }
+
+    .content>div {
+        width: 100%;
+        /* height: 100%; */
+    }
+
+    /* 首页 */
+
+    .page1 {
+        background: url(../img/BG_.png);
+        background-size: 100% 100%;
+        position: relative;
+    }
+
+    .page1 h2 {
+        position: absolute;
+        left: 2.63rem;
+        text-indent: -9999px;
+        width: 2.3rem;
+        height: 2.2rem;
+        /* margin: 0 2.57rem 0 2.63rem; */
+        background: url(../img/LOGO_.png);
+        background-size: 100% 100%;
+        opacity: 0;
+        animation: logomove 2s ease 1s forwards;
+    }
+
+    @keyframes logomove {
+        form {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .top {
+        position: relative;
+        padding-top: 4rem;
+    }
+
+    .top P:nth-of-type(1) {
+        line-height: 0.47rem;
+        font-family: STYuanti-SC-Regular, "Microsoft YaHei";
+        color: #333333;
+        font-size: 0.48rem;
+        text-align: center;
+        /* margin-top: 0.38rem; */
+    }
+
+    .top p:nth-of-type(2) {
+        line-height: 0.28rem;
+        color: #333333;
+        font-family: STYuanti-SC-Light, "Microsoft YaHei";
+        font-weight: lighter;
+        font-size: 0.28rem;
+        text-align: center;
+        margin: 0.26rem 0 0 0;
+    }
+
+    .bottom P:nth-of-type(1) {
+        /* line-height: 0.52rem; */
+        color: #FFFFFF;
+        font-family: STYuanti-SC-Regular, "Microsoft YaHei";
+        font-size: 0.53rem;
+        text-align: center;
+        /* margin-top: 1.57rem; */
+    }
+
+    .bottom p:nth-of-type(2) {
+        line-height: 0.25rem;
+        color: #FFFFFF;
+        font-family: PingFangSC-Light, "Microsoft YaHei";
+        font-weight: lighter;
+        font-size: 0.26rem;
+        text-align: center;
+        margin-top: 0.2rem;
+    }
+
+    .foot {
+        position: relative;
+        margin: 0 2.07rem 0 2.07rem;
+        padding-bottom: 1.92rem;
+    }
+
+    .download {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #864CFF;
+        width: 3.36rem;
+        line-height: 0.8rem;
+        font-size: 0.36rem;
+        font-family: PingFangSC-Regular, "Microsoft YaHei";
+        text-align: center;
+        background-color: #FFFFFF;
+        border-radius: 0.4rem;
+        z-index: 1;
+        opacity: 0;
+        animation: downloadchange 1.5s linear 1s;
+        animation-fill-mode : forwards;
+        border: 1px solid #fff;
+    }
+
+    @keyframes downloadchange {
+        from {
+            transform: scale(0);
+            opacity: 0;
+        }
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    .arrow-down {
+        position: absolute;
+        width: 0.25rem;
+        height: 0.31rem;
+        top: 1.62rem;
+        left: 1.63rem;
+        background: url(../img/xiahuajiantou_.png);
+        background-size: 100% 100%;
+        animation: arrowmove 1s linear infinite alternate;
+    }
+
+    @keyframes arrowmove{
+        from {
+            top: 1.62rem;
+        }
+        to {
+            top: 1.3rem;
+        }
+    }
+
+    /* page2 page3*/
+
+    .page2,
+    .page3 {
+        position: relative;
+        background: url(../img/BG-2.png);
+        background-size: 100% 100%;
+    }
+
+    .page2>.top p:nth-of-type(1),
+    .page3>.top p:nth-of-type(1) {
+        color: #FFFFFF;
+        text-align: center;
+        font-size: .48rem;
+        font-family: STYuanti-SC-Regular, "Microsoft YaHei";
+    }
+
+    .page2>.top p:nth-of-type(2),
+    .page3>.top p:nth-of-type(2) {
+        color: #fff;
+        text-align: center;
+        margin-top: .3rem;
+        font-size: .28rem;
+        font-family: STYuanti-SC-Light, "Microsoft YaHei";
+        font-weight: lighter;
+    }
+
+    .page2>.center {
+        width: 5.56rem;
+        background: url(../img/dierye_zhongjianneirong.png);
+        background-size: 100% 100%;
+        margin: 0 0.94rem 0 1.02rem;
+    }
+
+    .page3>.center {
+        width: 4.28rem;
+        background: url(../img/disanye_zhongjianneirong.png);
+        background-size: 100% 100%;
+        margin: 0 2.02rem 0 1.2rem;
+    }
+
+    .service-btn {
+        position: fixed;
+        width: 1.06rem;
+        height: 1.08rem;
+        right: 0.4rem;
+        top: 0;
+        background: url(../img/lianxikefu_.png);
+        background-size: 100% 100%;
+        z-index: 1;
+    }
+
+    .mask {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .5);
+        z-index: 2;
+        display: none;
+    }
+
+    .service-box {
+        position: absolute;
+        left: 1.38rem;
+    }
+    
+    .service-bg {
+        width: 4.77rem;
+        background: url(../img/tanchuangneirong@2x.png);
+        background-size: 100% 100%;
+    }
+
+    .service-box > div:nth-of-type(2) {
+        width: 4.77rem;
+        background-color: #fff;
+        z-index: 3;
+    }
+
+    .service-box  > div:nth-of-type(2) > p:nth-of-type(1) {
+        color: #333;
+        font-size: .36rem;
+        font-family: PingFangSC-Regular, "Microsoft YaHei";
+        text-align: center;
+    }
+    .service-box > div:nth-of-type(2) > p:nth-of-type(2) {
+        color: #333;
+        font-size: .28rem;
+        font-family: PingFangSC-Regular, "Microsoft YaHei";
+        font-weight: lighter;
+        text-align: center;
+    }
+    .service-box > div:nth-of-type(2) > p:nth-of-type(3) {
+        color: #333;
+        font-size: .28rem;
+        font-family: PingFangSC-Regular, "Microsoft YaHei";
+        font-weight: lighter;
+        text-align: center;
+    }

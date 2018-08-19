@@ -1,0 +1,61 @@
+html,body{
+    width: 100%;
+}
+.content {
+    width: 100%;
+    /* overflow: hidden; */
+    padding-bottom: .94rem;
+    background-color: #946be7;
+}
+.content  p {
+    text-align: center;
+    font-size: .3rem;
+    line-height: .3rem;
+    font-family: SourceHanSansCN-Regular, "Microsoft YaHei";
+    color: #FFFFFF;
+}
+.content > div > p > span {
+    color: red;
+}
+.content > div > img {
+    display: block;
+    width: 4.22rem;
+    height: 7.56rem;
+    margin: 0 1.64rem 0 1.64rem;
+    padding: .15rem 0;
+}
+.step1 > p:nth-of-type(2) {
+    font-size: .22rem;
+    padding-bottom: .3rem;
+    line-height: .5rem;
+}
+.step1 > p:nth-of-type(1) {
+    padding-top: 1.2rem;
+}
+.step2 > p {
+    font-size: .22rem;
+    padding: .7rem 0 .2rem 0;
+}
+.step3 > p {
+    font-size: .22rem;
+    padding: .7rem 0 .2rem 0;
+}
+.step4 > p {
+    font-size: .22rem;
+    padding-top: .7rem;
+    line-height: .5rem;
+}
+.GoTop {
+    
+    display: block;
+    color: #946BE7;
+    font-size: .28rem;
+    font-family: SourceHanSansCN-Regular, "Microsoft YaHei";
+    text-align: center;
+    width: 2.58rem;
+    height: .66rem;
+    line-height: .66rem;
+    background-color: #EDFBFB;
+    border-radius: .34rem;
+    margin: .86rem 2.46rem 0 2.46rem;
+}
